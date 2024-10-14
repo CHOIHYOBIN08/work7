@@ -24,15 +24,21 @@ $('.gnb .gnb-item a').click(function(e){
 var lastScrollTop = 0;
 $(window).scroll(function(event) {
     var st = $(this).scrollTop();
-    if (st > lastScrollTop) {
+
+    // 스크롤이 최상단일 때 헤더 고정 보이기
+    if (st === 0) {
+        $('#header').slideDown(); // 최상단일 때는 항상 헤더를 보이도록
+    } else if (st > lastScrollTop) {
         // 스크롤을 내릴 때 헤더 숨기기
         $('#header').slideUp();
     } else {
         // 스크롤을 올릴 때 헤더 나타내기
         $('#header').slideDown();
     }
+
     lastScrollTop = st;
 });
+
 
 //텍스트 흐르게
 gsap.registerPlugin(ScrollTrigger);
