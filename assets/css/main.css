@@ -1,0 +1,494 @@
+
+.sc-intro{
+    background-color: #0000;
+    background-image: linear-gradient(#fff0 20%,#000000b3),linear-gradient(#00000052,#0000),linear-gradient(90deg,#000000e6 40%,#0000);
+    align-items: center;
+    height: 93vh;
+    padding-bottom: 4rem;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.sc-intro .img-group{
+    z-index: -1;
+    background-color: #0000;
+    flex-direction: column;
+    align-items: flex-end;
+    display: flex;
+    position: absolute;
+    inset: 0% -10% 0% 0%;
+    overflow: hidden;
+}
+.sc-intro .img-group .wrapper{
+    position: absolute;
+    inset: 0%;
+}
+.sc-intro .bg-list{
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-columns: 1fr;
+    max-width: none;
+    margin-left: 20rem;
+    display: grid;
+    transform: rotate(15deg);
+    animation: scrollUp 60s linear infinite;
+}
+@keyframes scrollUp {
+  0% {
+    transform: rotate(15deg) translateY(0); 
+  }
+  100% {
+    transform: rotate(15deg) translateY(-100%); 
+  }
+}
+
+.sc-intro .bg-list .thumb{
+    width: auto;
+    height: auto;
+
+}
+.sc-intro .bg-list .thumb img{
+    object-fit: cover;
+    border-radius: 16px;
+    width: 100%;
+    height:350px;
+
+}
+.sc-intro .text-group{
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    max-width: none;
+    margin-top: -250px;
+}
+.sc-intro .text-group h2{
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: bold,sans-serif;
+    font-size: 4rem;
+    line-height: 1.5;
+}
+.sc-intro .text-group span{
+    color: #fff;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: ibmp,sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    display: flex;
+    position: relative;
+    text-transform: uppercase;
+}
+.sc-intro .circle-group{
+    position: absolute;
+    inset: 45% auto 10% 5%;
+}
+.sc-intro .circle-group a{
+    max-width: 100%;
+    display: inline-block;
+}
+.sc-intro .circle-group .circle-wrap{
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    position: relative;
+}
+.sc-intro .circle-group img:first-child{
+    color: var(--light-sea-green);
+    position: absolute;
+    inset: auto auto 0% 0%;
+    animation: rotateClockwise 60s linear infinite;
+}
+.sc-intro .circle-group img:nth-child(2){
+    animation: rotateClockwise 60s linear infinite;
+    max-width: 24%;
+
+}
+@keyframes rotateClockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg); 
+    }
+}
+
+
+.sc-scroll-text{
+    background-color: #000;
+    height: 100%;
+    overflow: hidden;
+}
+.sc-scroll-text .text-content{
+    border-top-style: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.sc-scroll-text .text-list{
+    position: relative;
+    font-size: 1rem;
+    display: flex;
+    gap: 30px;
+    white-space: nowrap;
+    will-change: transform;
+    transform: translate3d(-4.78204rem, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+.sc-scroll-text .text-item{
+    justify-self: center;
+}
+.sc-scroll-text .text-item span{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: bold,sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.sc-scroll-text .text-item .line{
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px white;
+    object-fit: contain;
+    display: inline;
+    overflow: hidden;
+}
+
+
+.sc-project{
+    position: relative;
+}
+.sc-project .project-list{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1rem;
+    overflow: hidden;
+
+}
+.sc-project .project-item{
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    position: relative;
+    overflow: hidden;
+}
+.sc-project .project-item .thumb{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    will-change: transform;
+    transform: translate3d(0px, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+.sc-project .project-item .thumb video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sc-project .project-item .thumb img{
+    object-fit: cover;
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    inset: 0%;
+    will-change: opacity, transform;
+    opacity: 1;
+    transform: translate3d(0px, 3.742vh, 0px) scale3d(1.46258, 1.46258, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+.sc-project .project-item .over-lay{
+    z-index: 6;
+    background-color: #16151a33;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0%;
+}
+.sc-project .project-item .text-group{
+    z-index: 7;
+    flex-direction: column;
+    grid-row-gap: 1.3125rem;
+    width: 100%;
+    padding-bottom: 9.8625rem;
+    padding-left: 2.5625rem;
+    display: flex;
+    position: absolute;
+    will-change: opacity, transform;
+    opacity: 1;
+    transform: translate3d(0rem, -3.74126vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+.sc-project .project-item .text-group h2{
+    color: #fff;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: bold,sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    display: flex;
+    position: relative;
+}
+.sc-project .project-item .text-group span{
+    margin-top: -21px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: ibmp,sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.sc-project .project-item .text-group .line{
+    width: 0.125rem;
+    height: 7.66357rem;
+    background-color: #fff;
+    margin-left: 0;
+}
+.sc-project .project-item .text-group .link-more{
+    color: #fff;
+    text-align: center;
+    background-color: #0000;
+    border-radius: 8rem;
+    align-items: center;
+    font-family: garute,sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: flex;
+}
+.sc-project .project-item .text-group .icon{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+}
+.sc-project .archive{
+    z-index: 99;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    background-color: #000;
+    justify-content: flex-start;
+    align-items: center;
+    height: 4.7rem;
+    padding-left: 2.5625rem;
+    padding-right: 2.5625rem;
+    text-decoration: none;
+    display: flex;
+    position: sticky;
+    inset: auto 0% 0%;
+}
+.sc-project .archive h3{
+    color: #fff;
+    font-family: bold,sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+}
+.sc-project .archive img{
+    max-width: 4.5rem;
+    transition: transform 0.3s ease; 
+    will-change: transform;
+}
+.sc-project .archive:hover img{
+    transform: translateX(20px);
+}
+
+
+.sc-fade-text{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.sc-fade-text .fade-wrapper .glow-track{
+    z-index: -1;
+    position: absolute;
+    inset: 0%;
+}
+.sc-fade-text .fade-wrapper .glow-track img{
+    opacity: .93;
+    mix-blend-mode: exclusion;
+    vertical-align: middle;
+    max-width: 100%;
+    display: inline-block;
+    position: absolute;
+    pointer-events: none;
+}
+.sc-fade-text .text-group{
+    z-index: 55;
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 600;
+    width: 100%;
+    max-width: 80rem;
+    color: rgb(84, 84, 84);
+    padding-top: 7rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.sc-fade-text .text-group .txt{
+    font-family: 'nanum',sans-serif;
+    position: relative;
+    display: block;
+    background-clip: text;
+    background-size: 0%;
+    transition: background-size 0.3s ease;
+    padding-bottom: 10rem;
+}
+
+
+#contact{
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:991px){
+    .sc-intro .text-group h2 {
+        font-size: 3.25rem;
+    }
+    .sc-intro .text-group span{
+        font-size: 1.25rem;
+        line-height: 1.25;
+    }
+    .sc-intro .bg-list .thumb img{
+        height: 300px;
+    }
+    .sc-scroll-text .text-item span {
+        font-size: 3.25rem;
+    }
+    .sc-fade-text .text-group{
+        z-index: 50;
+        text-align: center;
+        width: 80%;
+        max-width: 75rem;
+    }
+    .sc-fade-text .text-group .txt{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .sc-fade-text .fade-wrapper .glow-track img{
+        display: none;
+    }
+    .sc-service .service-group{
+        grid-row-gap: 4rem;
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        height: 50vh;
+        min-height: auto;
+        padding-top: 6rem;
+        padding-left: 0;
+    }
+    .sc-service .service-group .left-wrap .text-box{
+        padding-left: 10rem;
+        max-width: 20rem;
+
+    }
+    .sc-service .service-group .left-wrap .text-box h2{
+        text-align: left;
+        margin-bottom: 3rem;
+    }
+    .sc-project .archive h3 {
+        font-size: 2.25rem;
+    }
+    .sc-project .archive{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+}
+@media screen and (max-width:767px){
+    .sc-intro .bg-list .thumb img{
+        min-width: 225px;
+    }
+    .sc-scroll-text .text-item span{
+        font-size: 2.5rem;
+    }
+    .sc-project .project-item .text-group h2{
+        text-align: left;
+        font-size: 2.25rem;
+        margin-top: 30px;
+    }
+    .sc-project .project-item .text-group span{
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    .sc-project .archive h3 {
+        font-size: 1.5rem;
+    }
+    .sc-fade-text .text-group .txt{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:479px){
+    .sc-intro {
+        padding-top: 10rem;
+        padding-bottom: 0;
+    }
+    .sc-intro .text-group h2 {
+        font-size: 2rem;
+    }
+    .sc-intro .text-group span{
+        margin-top: .5rem;
+        font-size: .75rem;
+        line-height: 1;
+    }
+    .sc-intro .circle-group{
+        inset: auto auto 15% 5%;
+    }
+    .sc-intro .circle-group .circle-wrap {
+        width: 10rem;
+        height: 10rem;
+    }
+    .sc-project .project-item .text-group h2{
+        margin-left: -22px;
+        margin-top: 20px;
+        font-size: 1.5rem;
+        line-height: 1;
+        display: block;
+    }
+    .sc-project .project-item .text-group span{
+        text-align: left;
+        margin-left: -22px;
+        font-size: 1rem;
+    }
+    .sc-project .archive h3 {
+        font-size: 1.25rem;
+    }
+    .sc-project .project-item .text-group .line{
+        margin-left: -1.4rem;
+    }
+    .sc-project .project-item .text-group .link-more{
+        margin-left: -22px;
+        font-size: .75rem;
+    }
+    .sc-fade-text .text-group .txt{
+        font-size: 1.75rem;
+    }
+    .sc-scroll-text .text-item span {
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+}

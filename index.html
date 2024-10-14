@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script> 
+    <script src="./assets/js/split.js"></script>
+
+    <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <div class="header-inner">
+            <h1 class="logo">
+                <a href=""><span>HYOBIN</span></a>
+            </h1>
+            <nav class="gnb">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="#about">ABOUT</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#project">PROJECT</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn-menu">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" width="100" height="100" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;"><defs><clipPath id="__lottie_element_2"><rect width="100" height="100" x="0" y="0"></rect></clipPath></defs><g clip-path="url(#__lottie_element_2)"><g transform="matrix(1,0,0,1,51,30)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(2,0,0,2,0,0)"><path fill="rgb(255,255,255)" fill-opacity="1" d=" M15.5,0 C15.5,0 15.5,0 15.5,0 C15.5,1.1038000583648682 14.603799819946289,2 13.5,2 C13.5,2 -13.5,2 -13.5,2 C-14.603799819946289,2 -15.5,1.1038000583648682 -15.5,0 C-15.5,0 -15.5,0 -15.5,0 C-15.5,-1.1038000583648682 -14.603799819946289,-2 -13.5,-2 C-13.5,-2 13.5,-2 13.5,-2 C14.603799819946289,-2 15.5,-1.1038000583648682 15.5,0z"></path></g></g><g transform="matrix(1,0,0,1,51,50)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(2,0,0,2,0,0)"><path fill="rgb(255,255,255)" fill-opacity="1" d=" M15.5,0 C15.5,0 15.5,0 15.5,0 C15.5,1.1038000583648682 14.603799819946289,2 13.5,2 C13.5,2 -13.5,2 -13.5,2 C-14.603799819946289,2 -15.5,1.1038000583648682 -15.5,0 C-15.5,0 -15.5,0 -15.5,0 C-15.5,-1.1038000583648682 -14.603799819946289,-2 -13.5,-2 C-13.5,-2 13.5,-2 13.5,-2 C14.603799819946289,-2 15.5,-1.1038000583648682 15.5,0z"></path></g></g><g transform="matrix(1,0,0,1,51,70)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(2,0,0,2,0,0)"><path fill="rgb(255,255,255)" fill-opacity="1" d=" M15.5,0 C15.5,0 15.5,0 15.5,0 C15.5,1.1038000583648682 14.603799819946289,2 13.5,2 C13.5,2 -13.5,2 -13.5,2 C-14.603799819946289,2 -15.5,1.1038000583648682 -15.5,0 C-15.5,0 -15.5,0 -15.5,0 C-15.5,-1.1038000583648682 -14.603799819946289,-2 -13.5,-2 C-13.5,-2 13.5,-2 13.5,-2 C14.603799819946289,-2 15.5,-1.1038000583648682 15.5,0z"></path></g></g></g></svg>
+                </div>
+            </button>
+            <div class="nav-menu">
+                <div class="nav-top">
+                    <button class="nav-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" width="100" height="100" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;"><defs><clipPath id="__lottie_element_2"><rect width="100" height="100" x="0" y="0"></rect></clipPath></defs><g clip-path="url(#__lottie_element_2)"><g transform="matrix(0.7071067690849304,-0.7071067690849304,0.7071067690849304,0.7071067690849304,51,50)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(2,0,0,2,0,0)"><path fill="rgb(255,255,255)" fill-opacity="1" d=" M15.5,0 C15.5,0 15.5,0 15.5,0 C15.5,1.1038000583648682 14.603799819946289,2 13.5,2 C13.5,2 -13.5,2 -13.5,2 C-14.603799819946289,2 -15.5,1.1038000583648682 -15.5,0 C-15.5,0 -15.5,0 -15.5,0 C-15.5,-1.1038000583648682 -14.603799819946289,-2 -13.5,-2 C-13.5,-2 13.5,-2 13.5,-2 C14.603799819946289,-2 15.5,-1.1038000583648682 15.5,0z"></path></g></g><g transform="matrix(0.7071067690849304,0.7071067690849304,-0.7071067690849304,0.7071067690849304,51,50)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(2,0,0,2,0,0)"><path fill="rgb(255,255,255)" fill-opacity="1" d=" M15.5,0 C15.5,0 15.5,0 15.5,0 C15.5,1.1038000583648682 14.603799819946289,2 13.5,2 C13.5,2 -13.5,2 -13.5,2 C-14.603799819946289,2 -15.5,1.1038000583648682 -15.5,0 C-15.5,0 -15.5,0 -15.5,0 C-15.5,-1.1038000583648682 -14.603799819946289,-2 -13.5,-2 C-13.5,-2 13.5,-2 13.5,-2 C14.603799819946289,-2 15.5,-1.1038000583648682 15.5,0z"></path></g></g><g transform="matrix(0.7071067690849304,-0.7071067690849304,0.7071067690849304,0.7071067690849304,51,50)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(2,0,0,2,0,0)"><path fill="rgb(255,255,255)" fill-opacity="1" d=" M15.5,0 C15.5,0 15.5,0 15.5,0 C15.5,1.1038000583648682 14.603799819946289,2 13.5,2 C13.5,2 -13.5,2 -13.5,2 C-14.603799819946289,2 -15.5,1.1038000583648682 -15.5,0 C-15.5,0 -15.5,0 -15.5,0 C-15.5,-1.1038000583648682 -14.603799819946289,-2 -13.5,-2 C-13.5,-2 13.5,-2 13.5,-2 C14.603799819946289,-2 15.5,-1.1038000583648682 15.5,0z"></path></g></g></g></svg>
+                    </button>
+                </div>
+                <div class="nav-group">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#about">
+                                <span class="word">ABOUT</span>
+                                <span class="word">ABOUT</span>
+                                <span class="word">ABOUT</span>
+                                <span class="word">ABOUT</span>
+                                <span class="word">ABOUT</span>
+                                <span class="word">ABOUT</span>
+                                <span class="word">ABOUT</span>
+                                <span class="word">ABOUT</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav-list reverse">
+                        <li class="nav-item">
+                            <a href="#project">
+                                <span class="word">PROJECT</span>
+                                <span class="word">PROJECT</span>
+                                <span class="word">PROJECT</span>
+                                <span class="word">PROJECT</span>
+                                <span class="word">PROJECT</span>
+                                <span class="word">PROJECT</span>
+                                <span class="word">PROJECT</span>
+                                <span class="word">PROJECT</span>
+                                <span class="word">PROJECT</span>
+                                <span class="word">PROJECT</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#contact">
+                                <span class="word">CONTACT</span>
+                                <span class="word">CONTACT</span>
+                                <span class="word">CONTACT</span>
+                                <span class="word">CONTACT</span>
+                                <span class="word">CONTACT</span>
+                                <span class="word">CONTACT</span>
+                                <span class="word">CONTACT</span>
+                                <span class="word">CONTACT</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="container">
+        <section class="sc-intro">
+            <div class="img-group">
+                <div class="wrapper">
+                    <ul class="bg-list">
+                        <li class="bg-item">
+                            <div class="thumb">
+                                <img src="./assets/imgs/reat_image_2 (1).jpg" alt>
+                            </div>
+                        </li>
+                        <li class="bg-item">
+                            <div class="thumb">
+                                <img src="./assets/imgs/2790f5787f03480a8dfd5c9da389c7ff.jpg" alt>
+                            </div>
+                        </li>
+                        <li class="bg-item">
+                            <div class="thumb">
+                                <img src="./assets/imgs/95550fbeeed44e448e9aa07b6d94e2d5.jpg" alt>
+                            </div>
+                        </li>
+                        <li class="bg-item">
+                            <div class="thumb">
+                                <img src="./assets/imgs/SPC_20240529145612_71521.jpg" alt>
+                            </div>
+                        </li>
+                        <li class="bg-item">
+                            <div class="thumb">
+                                <img src="./assets/imgs/eve_image_1.jpg" alt>
+                            </div>
+                        </li>
+                        <li class="bg-item">
+                            <div class="thumb">
+                                <img src="./assets/imgs/e2acf15f-d067-45ff-9183-25716d2e9b7d_HeroHills.avif" alt>
+                            </div>
+                        </li>
+                        <li class="bg-item">
+                            <div class="thumb">
+                                <img src="./assets/imgs/524c6f2b-40dd-4361-80e0-3b6549b94fcd_Group 1805.avif" alt>
+                            </div>
+                        </li>
+                        <li class="bg-item">
+                            <div class="thumb">
+                                <img src="./assets/imgs/visual@3x.jpg" alt>
+                            </div>
+                        </li>
+                        <li class="bg-item">
+                            <div class="thumb">
+                                <img src="./assets/imgs/naver-tech-card-img2.jpg" alt>
+                            </div>
+                        </li>
+                        <li class="bg-item">
+                            <div class="thumb">
+                                <img src="./assets/imgs/jentlesalon_campaign_kv_section1.avif" alt>
+                            </div>
+                        </li>
+                        <li class="bg-item">
+                            <div class="thumb">
+                                <img src="./assets/imgs/naver-service-card-img1.jpg" alt>
+                            </div>
+                        </li>
+                        <li class="bg-item">
+                            <div class="thumb">
+                                <img src="./assets/imgs/f00eef6a-d5f7-4252-8ec8-a72af196768e_IMG_8778-2.avif" alt>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-group">
+                <h2 class="title">PORTFOLIO</h2>
+                <span class="desc">Expert in all aspects of web publishing.</span>
+            </div>
+            <div class="circle-group">
+                <a href="https://velog.io/@hyobin88/posts">
+                    <div class="circle-wrap">
+                        <img src="./assets/imgs/circle.svg" alt>
+                        <img src="./assets/imgs/play.svg" alt>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="sc-scroll-text">
+            <div class="text-content">
+                <ul class="text-list">
+                    <li class="text-item">
+                        <span class="word">SELECTED WORK</span>
+                    </li>
+                    <li class="text-item">
+                        <span class="line">SELECTED WORK</span>
+                    </li>
+                    <li class="text-item">
+                        <span class="word">SELECTED WORK</span>
+                    </li>
+                    <li class="text-item">
+                        <span class="line">SELECTED WORK</span>
+                    </li>
+                    <li class="text-item">
+                        <span class="word">SELECTED WORK</span>
+                    </li>
+                    <li class="text-item">
+                        <span class="line">SELECTED WORK</span>
+                    </li>
+                    <li class="text-item">
+                        <span class="word">SELECTED WORK</span>
+                    </li>
+                    <li class="text-item">
+                        <span class="line">SELECTED WORK</span>
+                    </li>
+                    <li class="text-item">
+                        <span class="word">SELECTED WORK</span>
+                    </li>
+                    <li class="text-item">
+                        <span class="line">SELECTED WORK</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="sc-project" id="project">
+            <div class="project-wrapper">
+                <ul class="project-list">
+                    <li class="project-item">
+                        <div class="thumb">
+                            <video class="Home__ThirdImage" src="https://www.moxionpower.com/home-video.webm" autoplay="" loop="" playsinline="" muted=""></video>
+                            <div class="over-lay"></div>
+                            <div class="text-group">
+                                <h2 class="title">MOXION</h2>
+                                <span class="desc"> #gsap #swiper #jquery</span>
+                                <div class="line"></div>
+                                <a href="https://choihyobin08.github.io/work5/" class="link-more">Watch More
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M6.23 20.23L8 22l10-10L8 2L6.23 3.77L14.46 12z"></path></svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <div class="thumb">
+                            <video id="video2" class="video__item jsSubVideo jsVideoControl" autoplay="" loop="" muted="" playsinline="" poster="https://web-resource.gentlemonster.com/assets/stories/2021-pre-collection/img/poster03_new.jpg">
+                                <source src="https://web-resource.gentlemonster.com/assets/stories/2021-pre-collection/videos/3_level_new.mp4" type="video/mp4">
+                            </video>
+                            <div class="over-lay"></div>
+                            <div class="text-group">
+                                <h2 class="title">GENTLE MONSTER</h2>
+                                <span class="desc">#renewal #gsap #jquery #split</span>
+                                <div class="line"></div>
+                                <a href="https://choihyobin08.github.io/work6/" class="link-more">Watch More
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M6.23 20.23L8 22l10-10L8 2L6.23 3.77L14.46 12z"></path></svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <div class="thumb">
+                            <img src="./assets/imgs/Aug-29-2024 20-25-39.gif" alt>
+                            <div class="over-lay"></div>
+                            <div class="text-group">
+                                <h2 class="title">MUSINSA</h2>
+                                <span class="desc">#swiper #jquery #json</span>
+                                <div class="line"></div>
+                                <a href="https://choihyobin08.github.io/work3/" class="link-more">Watch More
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M6.23 20.23L8 22l10-10L8 2L6.23 3.77L14.46 12z"></path></svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <div class="thumb">
+                            <video muted="muted" loop="loop" playsinline="" autoplay="" poster="https://woowahan-cdn.woowahan.com/static/image/service/pc/dilly.png?1d31551b"><source src="https://woowahan-cdn.woowahan.com/static/media/dilly.feb1e91c.mp4" type="video/mp4"> Sorry, your browser doesn't support embedded videos. </video>
+                            <div class="over-lay"></div>
+                            <div class="text-group">
+                                <h2 class="title">WOOWAHAN</h2>
+                                <span class="desc">#swiper #jquery</span>
+                                <div class="line"></div>
+                                <a href="https://choihyobin08.github.io/work4/" class="link-more">Watch More
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M6.23 20.23L8 22l10-10L8 2L6.23 3.77L14.46 12z"></path></svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <div class="thumb">
+                            <img src="./assets/imgs/city-7459162_1280.jpg" alt>
+                            <div class="over-lay"></div>
+                            <div class="text-group">
+                                <h2 class="title">SEOUL CITY HALL</h2>
+                                <span class="desc">#swiper #jquery</span>
+                                <div class="line"></div>
+                                <a href="https://choihyobin08.github.io/work2/" class="link-more">Watch More
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M6.23 20.23L8 22l10-10L8 2L6.23 3.77L14.46 12z"></path></svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <div class="thumb">
+                            <img src="./assets/imgs/naver-main-img.jpg" alt>
+                            <div class="over-lay"></div>
+                            <div class="text-group">
+                                <h2 class="title">NAVER</h2>
+                                <span class="desc">#clone #css</span>
+                                <div class="line"></div>
+                                <a href="https://choihyobin08.github.io/work1/" class="link-more">Watch More
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M6.23 20.23L8 22l10-10L8 2L6.23 3.77L14.46 12z"></path></svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a href="" class="archive">
+                    <h3>Work Portfolio </h3>
+                    <img src="./assets/imgs/arrow.svg" alt="">
+                </a>
+            </div>
+        </section>
+
+        <section class="sc-fade-text" id="about">
+            <div class="fade-wrapper">
+                <div class="glow-track">
+                    <img src="./assets/imgs/glow.svg" alt>
+                </div>
+            </div>
+            <div class="text-group">
+                <p class="txt">
+                    저는 HTML, CSS, JavaScript 등의 웹 기술을 통해 사용자가 직관적으로 사이트를 탐색할 수 있도록 구조적이고 시각적으로 매력적인 웹사이트를 제작할 것입니다. 
+                    최신 기술을 도입해 동적인 요소와 상호작용을 강화함으로써 사용자가 더욱 몰입할 수 있는 경험을 제공하겠습니다. 또한, 웹 개발의 빠른 변화에 발맞추어 끊임없이 최신 트렌드와 기술을 학습하여, 
+                    성능이 뛰어나고 관리가 효율적인 웹사이트를 개발하는 데 집중하겠습니다.
+                </p>
+            </div>
+        </section>
+
+        <section class="sc-scroll-text" id="contact">
+            <div class="text-content">
+                <ul class="text-list">
+                    <li class="text-item">
+                        <span class="word">CONTACT</span>
+                    </li>
+                    <li class="text-item">
+                        <span class="line">CONTACT</span>
+                    </li>
+                    <li class="text-item">
+                        <span class="word">CONTACT</span>
+                    </li>
+                    <li class="text-item">
+                        <span class="line">CONTACT</span>
+                    </li>
+                    <li class="text-item">
+                        <span class="word">CONTACT</span>
+                    </li>
+                    <li class="text-item">
+                        <span class="line">CONTACT</span>
+                    </li>
+                    <li class="text-item">
+                        <span class="word">CONTACT</span>
+                    </li>
+                    <li class="text-item">
+                        <span class="line">CONTACT</span>
+                    </li>
+                    <li class="text-item">
+                        <span class="word">CONTACT</span>
+                    </li>
+                    <li class="text-item">
+                        <span class="line">CONTACT</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <h2 class="blind">푸터</h2>
+        <div class="footer-inner">
+            <h2>CHOI HYO BIN</h2>
+            <div class="bottom">
+                <small class="copy">©2024  choi-hyobin. All rights reserved.</small>
+                <div class="sns-area">
+                    <a href="https://velog.io/@hyobin88/posts">VELOG</a>
+                    <a href="mailto:gyqls1208@naver.com">EMAIL</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

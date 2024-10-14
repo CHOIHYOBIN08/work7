@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'bold';
+    src: url(../font/bold.ttf);
+}
+@font-face {
+    font-family: 'ibmp';
+    src: url(../font/ibmp.ttf);
+}
+@font-face {
+    font-family: 'garute';
+    src: url(../font/garute.ttf);
+}
+@font-face {
+    font-family: 'nanum';
+    src: url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+}
