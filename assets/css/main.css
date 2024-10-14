@@ -449,6 +449,11 @@
     .sc-intro .text-group h2 {
         font-size: 2rem;
     }
+    .sc-intro .img-group{
+        justify-content: flex-start;
+        align-items: stretch;
+        inset: 0% 0% 0% -80%;
+    }
     .sc-intro .text-group span{
         margin-top: .5rem;
         font-size: .75rem;
