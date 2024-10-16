@@ -157,7 +157,6 @@
 }
 .sc-scroll-text .text-item .line{
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
     -webkit-text-stroke: 1px white;
     object-fit: contain;
     display: inline;
